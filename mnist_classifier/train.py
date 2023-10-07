@@ -14,7 +14,9 @@ if __name__ == "__main__":
     train_batch_size = 64
     val_batch_size = 64
 
-    mnist_dataset = mnist.MNIST(root="./train", train=True, transform=ToTensor())
+    mnist_dataset = mnist.MNIST(
+        root="./train", train=True, transform=ToTensor(), download=True
+    )
     train_size = 0.8
 
     mnist_len = len(mnist_dataset)
