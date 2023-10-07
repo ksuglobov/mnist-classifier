@@ -11,7 +11,9 @@ if __name__ == "__main__":
     device = "cpu"
     test_batch_size = 1
 
-    test_dataset = mnist.MNIST(root="./test", train=False, transform=ToTensor())
+    test_dataset = mnist.MNIST(
+        root="./test", train=False, transform=ToTensor(), download=True
+    )
     test_loader = DataLoader(test_dataset, batch_size=test_batch_size, shuffle=False)
 
     model = torch.load("model.pkl")
