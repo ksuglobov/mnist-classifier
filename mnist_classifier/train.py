@@ -9,8 +9,7 @@ from torchvision.transforms import ToTensor
 
 
 if __name__ == "__main__":
-    # device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    device = "cpu"
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     train_batch_size = 64
     val_batch_size = 64
 
