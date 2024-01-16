@@ -41,7 +41,7 @@ positional arguments:
     infer        Run inference
 ```
 
-### Train mode
+### Training
 
 Help for train mode:
 
@@ -64,7 +64,7 @@ options:
   --n_epochs N_EPOCHS   Number of epochs (default: 5)
 ```
 
-### Infer mode
+### Inference
 
 Help for infer mode:
 
