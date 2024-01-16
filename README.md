@@ -9,7 +9,9 @@ network.
 mkdir test_env
 virtualenv test_env
 source ./test_env/bin/activate
+```
 
+```bash
 poetry install
 
 pre-commit install
@@ -17,7 +19,7 @@ pre-commit install
 pre-commit run -a
 ```
 
-# Usage
+## Usage
 
 There are two modes of operation of the program: train and infer - for training
 and inference accordingly. The entry point to the program is `commands.py`.
@@ -39,7 +41,7 @@ positional arguments:
     infer        Run inference
 ```
 
-## Train mode
+### Train mode
 
 Help for train mode:
 
@@ -62,7 +64,7 @@ options:
   --n_epochs N_EPOCHS   Number of epochs (default: 5)
 ```
 
-## Infer mode
+### Infer mode
 
 Help for infer mode:
 
